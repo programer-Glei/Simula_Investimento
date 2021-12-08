@@ -1,1 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* Header ===========*/
+header{
+    background: #2d4a22;
+    padding: 3rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div .verde{
+    color: #49aa26;
+}
+
+header div img{
+    margin-left: -0.3rem;
+}
+
+header span{
+    font-size: 1.8rem;
+}
