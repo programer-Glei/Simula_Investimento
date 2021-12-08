@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: min(90vw, 800px);
+    width: min(90vw, 1600px);
     margin: auto;
 }
 
@@ -33,9 +33,10 @@ header div .verde{
 }
 
 header div img{
+    width: 3rem;
     margin-left: -0.3rem;
 }
 
 header span{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
