@@ -62,7 +62,7 @@ section{
 }
 
 .input-box label, .input-box .input-valor{
-    height: 5rem;
+    height: 7rem;
     width: 50%;
     display: flex;
     align-items: center;
@@ -86,11 +86,13 @@ section{
 }
 
 .input-box .input-valor input{
+    width: 100%;
     background: none;
     outline: none;
     border-bottom: 0.3rem solid #49aa26;
-    font-size: 1.8rem;
     color: #49aa26;
+    font-size: 2.7rem;
+    font-weight: 600;
 }
 
 .input-box .input-valor i, .input-box .input-valor span{
