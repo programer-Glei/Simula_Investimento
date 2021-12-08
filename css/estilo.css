@@ -9,9 +9,16 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    width: min(90vw, 1600px);
-    margin: auto;
+:root{
+    font-size: 62.5%;
+}
+
+body, button, input, textarea{
+    /* intervalo de tamanho dependendo do tamanho da tela */
+    font-size: clamp(14px, 1.6rem, 2vw);
+
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
 }
 
 /* Header ===========*/
