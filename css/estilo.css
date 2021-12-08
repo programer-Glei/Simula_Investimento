@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 body{
@@ -45,5 +46,59 @@ header div img{
 }
 
 header span{
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+.input-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #49aa26;
+}
+
+.input-box label, .input-box .input-valor{
+    height: 5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.input-box label, .input-box span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+
+.input-box label{
+    color: #fff;
+    background: #49aa26;
+    border-radius: 0.8rem 0 0 0.8rem;
+    padding-left: 3rem;
+}
+
+.input-box .input-valor{
+    padding: 0 2rem;
+}
+
+.input-box .input-valor input{
+    background: none;
+    outline: none;
+    border-bottom: 0.3rem solid #49aa26;
+    font-size: 1.8rem;
+    color: #49aa26;
+}
+
+.input-box .input-valor i, .input-box .input-valor span{
+    color: #49aa26;
+}
+
+.input-box .input-valor i{
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-right: 1rem;
 }
