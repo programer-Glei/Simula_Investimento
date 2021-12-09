@@ -23,7 +23,7 @@
                 <label for="valor">Valor investido</label>
                 <div class="input-valor">
                     <span>R</span><i class="fas fa-dollar-sign"></i>
-                    <input type="number" name="valor" size="8" value="2000.00" onchange="somar()"></input>
+                    <input type="text" name="valor" size="8" onchange="somar()" placeholder="0,00" onkeyup="mascaraMoeda(this, event)" value=""></input>
                 </div>
             </div>
             <table id="data-table">
