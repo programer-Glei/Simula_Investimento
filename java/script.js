@@ -2,7 +2,22 @@
 function somar(){
     let valor = document.querySelector(".input-valor input").value
 
-    document.querySelector("table .date").innerHTML = `R$ ${valor}`
+    let lista = valor.split('')
+    console.log(lista)
+
+    let numero = ""
+
+    for(let i in lista){
+        if (lista[i] != "."){
+            if(lista[i] == ","){
+                numero += "."
+            }else{
+                numero += lista[i]
+            }
+        }
+    }
+
+    document.querySelector("table .date").innerHTML = `R$ ${numero}`
 }
 
 String.prototype.reverse = function(){
