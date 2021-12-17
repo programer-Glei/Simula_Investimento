@@ -1,7 +1,7 @@
 const elem = (el) => document.querySelector(el)
 
 function ret(taxa,valor,ano){
-  let resut = valor + ((valor * taxa)*ano)
+  let resut = valor * (1 + taxa/100)**ano
   return resut
 }
 
@@ -24,8 +24,9 @@ function somar(){
     }
 
     let conver = parseFloat(numero)
-    let taxap = 0.068
-    let taxapi = 0.1098
+    let taxap = 6.8
+    let taxapi = 10.98
+    let taxanu = 9.15
     
 
     elem("table .p-1").innerHTML = `R$ ${ret(taxap,conver,1).toFixed(2)}`
@@ -39,6 +40,12 @@ function somar(){
     elem("table .pi-5").innerHTML = `R$ ${ret(taxapi,conver,5).toFixed(2)}`
     elem("table .pi-10").innerHTML = `R$ ${ret(taxapi,conver,10).toFixed(2)}`
     elem("table .pi-20").innerHTML = `R$ ${ret(taxapi,conver,20).toFixed(2)}`
+
+    elem("table .nu-1").innerHTML = `R$ ${ret(taxanu,conver,1).toFixed(2)}`
+    elem("table .nu-2").innerHTML = `R$ ${ret(taxanu,conver,2).toFixed(2)}`
+    elem("table .nu-5").innerHTML = `R$ ${ret(taxanu,conver,5).toFixed(2)}`
+    elem("table .nu-10").innerHTML = `R$ ${ret(taxanu,conver,10).toFixed(2)}`
+    elem("table .nu-20").innerHTML = `R$ ${ret(taxanu,conver,20).toFixed(2)}`
 }
 
 String.prototype.reverse = function(){
