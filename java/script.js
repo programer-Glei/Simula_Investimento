@@ -1,3 +1,9 @@
+const elem = (el) => document.querySelector(el)
+
+function ret(taxa,valor,ano){
+  let resut = valor + ((valor * taxa)*ano)
+  return resut
+}
 
 function somar(){
     let valor = document.querySelector(".input-valor input").value
@@ -19,10 +25,13 @@ function somar(){
 
     let conver = parseFloat(numero)
     let taxap = 0.068
-    let resut = conver + (conver * taxap)
     
 
-    document.querySelector("table .p-1").innerHTML = `R$ ${resut}`
+    elem("table .p-1").innerHTML = `R$ ${ret(taxap,conver,1).toFixed(2)}`
+    elem("table .p-2").innerHTML = `R$ ${ret(taxap,conver,2).toFixed(2)}`
+    elem("table .p-5").innerHTML = `R$ ${ret(taxap,conver,5).toFixed(2)}`
+    elem("table .p-10").innerHTML = `R$ ${ret(taxap,conver,10).toFixed(2)}`
+    elem("table .p-20").innerHTML = `R$ ${ret(taxap,conver,20).toFixed(2)}`
 }
 
 String.prototype.reverse = function(){
