@@ -17,6 +17,8 @@ function somar(){
         }
     }
 
+    
+
     document.querySelector("table .date").innerHTML = `R$ ${numero}`
 }
 

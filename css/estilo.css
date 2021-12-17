@@ -53,6 +53,17 @@ section{
     padding: 5rem 9%;
 }
 
+.intro{
+    padding: 5rem 9% 2rem 9%;
+    background: #fff;
+}
+
+.intro p{
+    width: 60%;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
 .input-box{
     width: 60%;
     display: flex;
