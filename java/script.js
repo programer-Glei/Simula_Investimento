@@ -25,6 +25,7 @@ function somar(){
 
     let conver = parseFloat(numero)
     let taxap = 0.068
+    let taxapi = 0.1098
     
 
     elem("table .p-1").innerHTML = `R$ ${ret(taxap,conver,1).toFixed(2)}`
@@ -32,6 +33,12 @@ function somar(){
     elem("table .p-5").innerHTML = `R$ ${ret(taxap,conver,5).toFixed(2)}`
     elem("table .p-10").innerHTML = `R$ ${ret(taxap,conver,10).toFixed(2)}`
     elem("table .p-20").innerHTML = `R$ ${ret(taxap,conver,20).toFixed(2)}`
+
+    elem("table .pi-1").innerHTML = `R$ ${ret(taxapi,conver,1).toFixed(2)}`
+    elem("table .pi-2").innerHTML = `R$ ${ret(taxapi,conver,2).toFixed(2)}`
+    elem("table .pi-5").innerHTML = `R$ ${ret(taxapi,conver,5).toFixed(2)}`
+    elem("table .pi-10").innerHTML = `R$ ${ret(taxapi,conver,10).toFixed(2)}`
+    elem("table .pi-20").innerHTML = `R$ ${ret(taxapi,conver,20).toFixed(2)}`
 }
 
 String.prototype.reverse = function(){
