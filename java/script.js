@@ -29,23 +29,23 @@ function somar(){
     let taxanu = 9.15
     
 
-    elem("table .p-1").innerHTML = `R$ ${ret(taxap,conver,1).toFixed(2)}`
-    elem("table .p-2").innerHTML = `R$ ${ret(taxap,conver,2).toFixed(2)}`
-    elem("table .p-5").innerHTML = `R$ ${ret(taxap,conver,5).toFixed(2)}`
-    elem("table .p-10").innerHTML = `R$ ${ret(taxap,conver,10).toFixed(2)}`
-    elem("table .p-20").innerHTML = `R$ ${ret(taxap,conver,20).toFixed(2)}`
+    elem("table .p-1").innerHTML = `${ret(taxap,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .p-2").innerHTML = `${ret(taxap,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .p-5").innerHTML = `${ret(taxap,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .p-10").innerHTML = `${ret(taxap,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .p-20").innerHTML = `${ret(taxap,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
 
-    elem("table .pi-1").innerHTML = `R$ ${ret(taxapi,conver,1).toFixed(2)}`
-    elem("table .pi-2").innerHTML = `R$ ${ret(taxapi,conver,2).toFixed(2)}`
-    elem("table .pi-5").innerHTML = `R$ ${ret(taxapi,conver,5).toFixed(2)}`
-    elem("table .pi-10").innerHTML = `R$ ${ret(taxapi,conver,10).toFixed(2)}`
-    elem("table .pi-20").innerHTML = `R$ ${ret(taxapi,conver,20).toFixed(2)}`
+    elem("table .pi-1").innerHTML = `${ret(taxapi,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .pi-2").innerHTML = `${ret(taxapi,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .pi-5").innerHTML = `${ret(taxapi,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .pi-10").innerHTML = `${ret(taxapi,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .pi-20").innerHTML = `R$ ${ret(taxapi,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
 
-    elem("table .nu-1").innerHTML = `R$ ${ret(taxanu,conver,1).toFixed(2)}`
-    elem("table .nu-2").innerHTML = `R$ ${ret(taxanu,conver,2).toFixed(2)}`
-    elem("table .nu-5").innerHTML = `R$ ${ret(taxanu,conver,5).toFixed(2)}`
-    elem("table .nu-10").innerHTML = `R$ ${ret(taxanu,conver,10).toFixed(2)}`
-    elem("table .nu-20").innerHTML = `R$ ${ret(taxanu,conver,20).toFixed(2)}`
+    elem("table .nu-1").innerHTML = `${ret(taxanu,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .nu-2").innerHTML = `${ret(taxanu,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .nu-5").innerHTML = `${ret(taxanu,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .nu-10").innerHTML = `${ret(taxanu,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .nu-20").innerHTML = `${ret(taxanu,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
 }
 
 String.prototype.reverse = function(){
