@@ -17,9 +17,12 @@ function somar(){
         }
     }
 
+    let conver = parseFloat(numero)
+    let taxap = 0.068
+    let resut = conver + (conver * taxap)
     
 
-    document.querySelector("table .date").innerHTML = `R$ ${numero}`
+    document.querySelector("table .p-1").innerHTML = `R$ ${resut}`
 }
 
 String.prototype.reverse = function(){
