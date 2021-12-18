@@ -64,6 +64,11 @@ section{
     font-size: 2rem;
 }
 
+.intro p span{
+    color: #49aa26;
+    font-size: 2.5rem;
+}
+
 .input-box{
     width: 60%;
     display: flex;
