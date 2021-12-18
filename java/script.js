@@ -27,6 +27,9 @@ function somar(){
     let taxap = 6.8
     let taxapi = 10.98
     let taxanu = 9.15
+    let ts24 = 9.16
+    let ts27 = 9.17
+    let pay = 20.13
     
 
     elem("table .p-1").innerHTML = `${ret(taxap,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
@@ -39,13 +42,42 @@ function somar(){
     elem("table .pi-2").innerHTML = `${ret(taxapi,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .pi-5").innerHTML = `${ret(taxapi,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .pi-10").innerHTML = `${ret(taxapi,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
-    elem("table .pi-20").innerHTML = `R$ ${ret(taxapi,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .pi-20").innerHTML = `${ret(taxapi,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
 
     elem("table .nu-1").innerHTML = `${ret(taxanu,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .nu-2").innerHTML = `${ret(taxanu,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .nu-5").innerHTML = `${ret(taxanu,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .nu-10").innerHTML = `${ret(taxanu,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
     elem("table .nu-20").innerHTML = `${ret(taxanu,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+
+    elem("table .ts24-1").innerHTML = `${ret(ts24,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts24-2").innerHTML = `${ret(ts24,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts24-5").innerHTML = `${ret(ts24,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts24-10").innerHTML = `${ret(ts24,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts24-20").innerHTML = `${ret(ts24,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+
+    elem("table .ts27-1").innerHTML = `${ret(ts27,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts27-2").innerHTML = `${ret(ts27,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts27-5").innerHTML = `${ret(ts27,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts27-10").innerHTML = `${ret(ts27,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    elem("table .ts27-20").innerHTML = `${ret(ts27,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+
+    if(conver > 5000){
+      console.log("entrou")
+      conver = 5000
+      elem("table .pay-1").innerHTML = `${ret(pay,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-2").innerHTML = `${ret(pay,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-5").innerHTML = `${ret(pay,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-10").innerHTML = `${ret(pay,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-20").innerHTML = `${ret(pay,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    }else{
+      console.log("não entrou")
+      elem("table .pay-1").innerHTML = `${ret(pay,conver,1).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-2").innerHTML = `${ret(pay,conver,2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-5").innerHTML = `${ret(pay,conver,5).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-10").innerHTML = `${ret(pay,conver,10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+      elem("table .pay-20").innerHTML = `${ret(pay,conver,20).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
+    }
 }
 
 String.prototype.reverse = function(){
