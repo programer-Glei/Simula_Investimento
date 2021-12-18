@@ -27,7 +27,7 @@
                 <label for="valor">Valor investido</label>
                 <div class="input-valor">
                     <span>R</span><i class="fas fa-dollar-sign"></i>
-                    <input type="text" name="valor" size="8" onchange="somar()" placeholder="0,00" onkeyup="mascaraMoeda(this, event)" value=""></input>
+                    <input type="text" name="valor" onchange="somar()" placeholder="0,00" onkeyup="mascaraMoeda(this, event)" value=""></input>
                 </div>
             </div>
             <table id="data-table">
@@ -102,10 +102,32 @@
             <p>* Todas as simulações, os valores são brutos.</p>
             <p>* 99 Pay máximo de investimento é 5.000,00.</p>
         </section>
+        <div class="intro">
+            <h1>O que é CDI?</h1>
+            <p>
+                O CDI (Certificado de Depósito Interbancário) é um título de curtíssimo prazo 
+                emitido pelos bancos. Em algum grau, ele se assemelha ao CDB. Isso porque o CDI 
+                também é usado pelas instituições para captar recursos.
+            </p>
+            <P>Mas há uma diferença fundamental entre eles: o certificado interbancário não é oferecido diretamente aos investidores individuais. Como o próprio nome indica, ele serve para que os bancos emprestem e tomem recursos entre si de um dia para o outro. O CDI tem prazo de vencimento de um dia útil.</P>
+            <P>A razão da existência do CDI é a regulação do sistema financeiro. O Banco Central determina que os bancos devem encerrar todos os dias com saldo positivo de caixa. É uma medida de segurança que procura assegurar que o sistema financeiro seja estável e esteja saudável.</P>
+            <P>Ocorre que isso nem sempre acontece. Imagine uma instituição que, em determinado dia, registre um volume maior de resgates do que de depósitos. As regras estabelecem que essa diferença seja obrigatoriamente coberta – e a saída para isso é tomar dinheiro emprestado, emitindo um CDI que seja adquirido por outro banco.</P>
+            <P>Se o CDI é um título não acessível para as pessoas físicas, o que essa sigla tem a ver com os investimentos em geral? A resposta é: os juros.</P>
+            <P>Nos empréstimos realizados entre os bancos por meio de CDIs há cobrança de juros. As operações são registradas na B3, que calcula a taxa média de juros praticada nos certificados interbancários de todo o mercado financeiro. Essa taxa, divulgada diariamente, é conhecida como “taxa DI” (também chamada de “taxa do CDI”).</P>
+            <P>Como reflete os juros médios das operações entre os bancos, a taxa DI se tornou uma referência para o restante do mercado financeiro. Mesmo sendo um indicador de base diária, ele também é calculado em base mensal e anual. Atualmente, a taxa DI serve de base para a rentabilidade dos investimentos de renda fixa em geral.</P>
+            <h1>O que é taxa SELIC?</h1>
+            <p>Selic é a taxa básica de juros da economia brasileira. Basicamente, ela influencia todas as demais taxas de juros do Brasil, como as cobradas em empréstimos, financiamentos e até de retorno em aplicações financeiras.</p>
+            <p>Selic é a sigla para Sistema Especial de Liquidação e Custódia, um programa virtual em que os títulos do Tesouro Nacional são comprados e vendidos diariamente por instituições financeiras.</p>
+            <p>No Brasil, a taxa Selic é a taxa média ajustada dos financiamentos diários apurados no Sistema Especial de Liquidação e de Custódia para títulos federais. Ela é obtida mediante o cálculo da taxa média ponderada e ajustada das operações de financiamento por um dia, lastreadas em títulos públicos federais e cursadas no referido sistema ou em câmaras de compensação e liquidação de ativos, na forma de operações compromissadas.</p>
+            <p>Como a taxa Selic representa além da remuneração das instituições financeiras nas operações com títulos públicos, ela é comumente utilizada como um índice pelo qual as taxas de juros no Brasil se balizam. Ela é um instrumento de política monetária utilizado pelo Copom para controlar os juros no país.</p>
+            <p>A taxa apurada no processamento noturno do Selic, que consolida as taxas praticadas durante aquele dia, é conhecida como taxa overnight do Selic, taxa Selic overnight ou taxa Selic over. Embora a taxa seja apurada diariamente, a taxa Selic é usualmente expressa em termos anuais, compondo os valores apurados nos últimos 12 meses.</p>
+        </div>
     </main>
     
     <footer>
-        <p>dev.finance$</p>
+        <p>simula.investi$</p>
+        <p>Desenvolvido por Gleibson</p>
+        <p>Designer Miqueias Monteiro</p>
     </footer>
     <script src="java/script.js"></script>
 </body>

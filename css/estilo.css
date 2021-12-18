@@ -68,6 +68,11 @@ section{
     width: 70%;
     line-height: 2.5rem;
     font-size: 2rem;
+    margin-bottom: 2.7rem;
+}
+
+.intro h1{
+    margin-bottom: 4rem;
 }
 
 .intro p span{
@@ -173,7 +178,14 @@ table thead tr th:first-child, table tbody tr td:first-child{
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){
+footer{
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: #363f5f;
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
     html{
         font-size: 50%;
     }
@@ -186,16 +198,26 @@ table thead tr th:first-child, table tbody tr td:first-child{
         width: 100%;
     }
 
-    .input-box label, .input-box span{
-        font-size: 1.5rem;
+    .input-box .input-valor{
+        padding: 0 1.3rem;
     }
 
-    .input-box .input-valor i{
-        font-size: 1.5rem;
+    .input-box label{
+        padding-left: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    html{
+        font-size: 50%;
     }
 
-    .input-box .input-valor input{
-        font-size: 1.5rem;
+    .input-box{
+        width: 100%;
+    }
+
+    .intro p{
+        width: 100%;
     }
 
     .input-box .input-valor{
