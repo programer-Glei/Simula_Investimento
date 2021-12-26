@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    transition: all 0.2s linear;
+    transition: width none;
 }
 
 body{
@@ -179,10 +181,37 @@ table thead tr th:first-child, table tbody tr td:first-child{
 }
 
 footer{
-    text-align: center;
-    padding: 4rem 0 2rem;
+    text-align: left;
+    padding: 4rem 9% 2rem 9%;
     color: #363f5f;
     opacity: 0.6;
+}
+
+footer h3{
+    font-size: 2.2rem;
+    color: #2d4a22;
+    padding: 1rem 0;
+}
+
+footer a{
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 1rem 0;
+    display: block;
+}
+
+footer a:hover{
+    color: #49aa26;
+}
+
+footer a i{
+    padding-right: 0.5rem;
+    color: #49aa26;
+}
+
+footer a:hover i{
+    padding-right: 2rem;
+    color: black;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px){
