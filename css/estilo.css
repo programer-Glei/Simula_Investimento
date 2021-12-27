@@ -210,10 +210,14 @@ table thead tr th:first-child, table tbody tr td:first-child{
 }
 
 footer{
-    text-align: left;
     padding: 4rem 9% 2rem 9%;
     color: #363f5f;
-    opacity: 0.6;
+}
+
+footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
 }
 
 footer h3{
@@ -227,6 +231,7 @@ footer a{
     color: #aaa;
     padding: 1rem 0;
     display: block;
+    text-decoration: none;
 }
 
 footer a:hover{
