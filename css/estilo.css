@@ -52,13 +52,35 @@ header span{
 }
 
 section{
-    padding: 5rem 9%;
+    padding: 0 9% 5rem 9%;
 }
 
 #transaction{
     width: 100%;
     display: block;
     overflow-x: auto;
+}
+
+.taxa-cont{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.taxa{
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.taxa strong{
+    margin-bottom: 1rem;
+}
+
+.taxa strong, .taxa span{
+    text-align: center;
 }
 
 .intro, .poli{
