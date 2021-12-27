@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/total.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo.css">
     <style>
         .cookieConsentContainer{
@@ -98,7 +99,7 @@
                 </div>
                 <div class="taxa">
                     <strong>Taxa CDI<br>2021</strong>
-                    <span>9,25% ano</span>
+                    <span>9,15% ano</span>
                 </div>
             </div>
             <div class="input-box">
@@ -205,9 +206,9 @@
             <h1 id="ipca">que é o IPCA?</h1>
             <p>IPCA (índice nacional de preços ao consumidor amplo) o índice oficial de inflação do Brasil.</p>
             <h2>Como é calculado o IPCA?</h2>
-            <p>o IPCA oficial é calculado pelo IBGE e divulgado todo mês. O IPCA possui uma população objetivo de 1 até 40 salarios minimos, e ele é calculado com base para a atenção na distribuição percentual das despesas pessoais desse público.</p>
+            <p>O IPCA oficial é calculado pelo IBGE e divulgado todo mês. O IPCA possui uma população objetivo de 1 até 40 salarios minimos, e ele é calculado com base para a atenção na distribuição percentual das despesas pessoais desse público.</p>
             <h2>Qual é a função do IPCA?</h2>
-            <p>ponderar as despesas das pessoas para verificar a variação dos custos. exemplo: quando tem uma variação no custo seja para cima, ou seja para baixo, aí é que define o IPCA - se o IPCA foi +0,57% significa que os custos daquelas despesas quando somadas, variaram para cima, ou seja aumentaram em 0,57%.</p>
+            <p>Ponderar as despesas das pessoas para verificar a variação dos custos. exemplo: quando tem uma variação no custo seja para cima, ou seja para baixo, aí é que define o IPCA - se o IPCA foi +0,57% significa que os custos daquelas despesas quando somadas, variaram para cima, ou seja aumentaram em 0,57%.</p>
         </div>
     </main>
     
@@ -233,7 +234,7 @@
     <script>
         var purecookieTitle="Cookies",
         purecookieDesc="Este site utiliza cookies para te proporcionar uma melhor experiência. Ao continuar navegando, você aceita nossa",
-        purecookieLink='<a href="politicas.html" target="_blank">Política de Privacidade</a>',
+        purecookieLink='<a href="politicas.html" target="_blank">Política de Privacidade.</a>',
         purecookieButton="ok";
         function pureFadeIn(e,o){var i=document.getElementById(e);i.style.opacity=0,i.style.display=o||"block",function e(){var o=parseFloat(i.style.opacity);(o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))}()}function pureFadeOut(e){var o=document.getElementById(e);o.style.opacity=1,function e(){(o.style.opacity-=.02)<0?o.style.display="none":requestAnimationFrame(e)}()}function setCookie(e,o,i){var t="";if(i){var n=new Date;n.setTime(n.getTime()+24*i*60*60*1e3),t="; expires="+n.toUTCString()}document.cookie=e+"="+(o||"")+t+"; path=/"}function getCookie(e){for(var o=e+"=",i=document.cookie.split(";"),t=0;t<i.length;t++){for(var n=i[t];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(o))return n.substring(o.length,n.length)}return null}function eraseCookie(e){document.cookie=e+"=; Max-Age=-99999999;"}function cookieConsent(){getCookie("purecookieDismiss")||(document.body.innerHTML+='<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>'+purecookieTitle+'</a></div><div class="cookieDesc"><p>'+purecookieDesc+" "+purecookieLink+'</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">'+purecookieButton+"</a></div></div>",pureFadeIn("cookieConsentContainer"))}function purecookieDismiss(){setCookie("purecookieDismiss","1",7),pureFadeOut("cookieConsentContainer")}window.onload=function(){cookieConsent()};
     </script>
