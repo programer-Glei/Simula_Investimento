@@ -25,10 +25,10 @@ function somar(){
 
     let conver = parseFloat(numero)
     let taxap = 6.8
-    let taxapi = 10.98
+    let taxapi = 11.71
     let taxanu = 9.15
-    let ts24 = 9.16
-    let ts27 = 9.17
+    let ts24 = 10.65
+    let ts27 = 10.67
     let pay = 20.13
     
 
